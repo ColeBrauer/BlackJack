@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="JS/Game.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1 style="color:black;display:inline-block">Black<h1 style="color:red;display:inline-block">jack</h1></h1>
+<body>
+
+<div class="game">    
+    <div class="game-body">
+		<img src="dealer.jpg" alt="Dealer" class="center"><!--Image belongs to: https://www.istockphoto.com/ca/illustrations/card-dealer -->
+		<div class="board">
+			<div id="dealer" class="dealer">
+				<div>Dealer's Hand</div>
+				<div class='points' id="points_dealer"> 0 </div>	
+				<div id="hand_dealer"> </div>	
+					<div class="card">* &spades;</div>
+					<div class="card">* &clubs;</div>
+			</div>
+		 
+			<div id="deck" class="deck">
+			</div>
+		
+			<div id="player" class="player">
+				<div id="hand_player"> 
+					<div class="card">* &diams;</div>
+					<div class="card">* &hearts;</div>
+				</div>
+				<div class='points' id="points_player"> 0 </div>
+				<div>Your Hand</div>
+			</div>
+		</div>
+		<div id="cash" class="cash">
+		Cash On Hand:
+        <div id="cashamt">100</div>
+		</div>
+		Cards left in deck:
+		<div id="deckcount">52</div>
+		
+		BET:
+		<input type="text" id='bet' name="bet" value='10' min="1">
+		<div class="game-options">
+			<input type="button" id="btnStart" class="btn" value="Place Bet" onclick="startblackjack()">
+			<input type="button" class="btn" id='btnHit' value="hit me" disabled onclick="hitMe()">
+			<input type="button" class="btn" id='btnStay' value="stay" disabled onclick="stay()">
+		</div>
+		
+        <div class="status" id="status"></div>    
+        <div class="clear"></div>
+	</div>
+</div>
+</body>
+</html>

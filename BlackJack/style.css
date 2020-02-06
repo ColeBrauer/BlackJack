@@ -1,0 +1,55 @@
+h1{
+	font-size:70px;	
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom:0px;
+  width:400px;
+}
+
+.card{
+	display:inline-block;
+	margin-left:10px;
+	border:solid;
+	background-color:white;
+	font-size:25px;
+	width:30px;
+	font-family:courier;
+}
+.card_hidden{
+	display:inline-block;
+	margin-left:10px;
+	color:white;
+	border:solid;
+	border-color:black;
+	background-color:white;
+	font-size:25px;
+	width:30px;
+	font-family:courier;
+	
+}
+body{
+	
+	text-align:center;
+}
+
+.cash{
+	color:green;
+}
+.board{
+	background-color:green;
+	width:400px;
+	border:ridge;
+	border-color:#654321;
+	border-width:5px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.status{
+	margin-top:20px;
+	font-size:20px;
+}
